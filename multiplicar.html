@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tablas de Multiplicar</title>
+  <link rel="stylesheet" href="multiplicar.css" />
+</head>
+<body>
+ 
+  <div class="scanline"></div>
+ 
+  <header>
+    <div class="logo-bar">
+      <span class="tag">&lt;TABLA_CALC /&gt;</span>
+      <span class="version">v1.0.0</span>
+    </div>
+    <h1>TABLAS DE<br/><span class="accent">MULTIPLICAR</span></h1>
+    <p class="subtitle">// Sistema de generación dinámica con JavaScript</p>
+  </header>
+ 
+  <main>
+ 
+    <section class="control-panel">
+      <label for="numeroInput" class="input-label">
+        <span class="prompt">&gt;_</span> INGRESA UN NÚMERO (1–12):
+      </label>
+      <div class="input-row">
+        <input
+          type="number"
+          id="numeroInput"
+          min="1"
+          max="12"
+          placeholder="Ej: 7"
+        />
+        <button id="btnProbar" onclick="generarTablas()">PROBAR</button>
+      </div>
+      <p class="hint">// Escribe el número y presiona PROBAR para generar su tabla</p>
+    </section>
+ 
+    <section class="output-area">
+      <div class="panel-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="panel-title">OUTPUT</span>
+      </div>
+ 
+      <div id="contenedor" class="contenedor">
+        <div class="placeholder">
+          <span class="blink">█</span>
+          <p>Esperando entrada del usuario...</p>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer>
+    <span>Creado por: <strong class="accent">Deku</strong></span>
+    <span class="sep">|</span>
+    <span>2025 &copy; Todos los derechos reservados</span>
+  </footer>
+ 
+  <script src="multiplicar.js"></script>
+</body>
+</html>
