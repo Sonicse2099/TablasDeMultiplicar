@@ -183,7 +183,7 @@ input[type="number"] {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 3px;
-  color: var(--accent);
+  color: var(--accent2);
   font-family: var(--font-mono);
   font-size: 1.2rem;
   padding: 0.6rem 1rem;
@@ -196,7 +196,7 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
  
 input[type="number"]:focus {
-  border-color: var(--accent);
+  border-color: var(--accent2);
   box-shadow: var(--glow);
 }
  
@@ -338,7 +338,7 @@ button#btnProbar:active { transform: scale(0.97); }
 }
  
 .fila:hover {
-  border-color: var(--accent);
+  border-color: var(--red);
   box-shadow: var(--glow);
 }
  
@@ -363,7 +363,7 @@ button#btnProbar:active { transform: scale(0.97); }
 .operador    { color: var(--muted); }
 .multiplicador { color: var(--text); min-width: 1.5rem; }
 .igual       { color: var(--muted); }
-.resultado   { color: var(--accent); font-weight: bold; margin-left: auto; font-size: 1.05rem; text-shadow: var(--glow); }
+.resultado   { color: var(--accent2); font-weight: bold; margin-left: auto; font-size: 1.05rem; text-shadow: var(--glow); }
  
 /* Error message */
 .error-msg {

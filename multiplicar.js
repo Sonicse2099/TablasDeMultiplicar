@@ -6,7 +6,7 @@ function generarTablas() {
  
   let contenedor = document.getElementById("contenedor");
 
-  let input = document.getElementById("numeroInput");
+  let input = document.getElementById("numero");
   let numero = parseInt(input.value);
 
   if (isNaN(numero) || numero < 1 || numero > 12) {
